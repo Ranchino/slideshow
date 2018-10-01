@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    width: 20em;
+    height: 15em;
+}
+
+.container img {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.container img.show {
+    opacity: 1;
+}
